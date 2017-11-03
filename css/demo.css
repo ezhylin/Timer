@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html, 
+body {
+  height: 100%;
+}
+
+html {
+  font: normal 100%/1.4 "Arial", sans-serif;
+}
+
+.wrapper {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  min-height: 100%;
+}
+
+.timer {
+  margin: auto;
+}
+
+.timer {
+    text-align  : center;
+    padding-top : 2rem;
+    padding-bottom: 2rem;
+}
+
+.timer__title {
+    padding-bottom : 0.5rem;
+    text-transform : uppercase;
+    font-weight    : 500;
+    font-size: 1.25rem;
+}
+
+.time-format {
+    font-size: 0;
+}
+
+.time-format__unit,
+.time-format__divider {
+    display: inline-block;
+    vertical-align: middle;
+    font-size       : 2.5rem;
+}
+
+.time-format__unit.highlight {
+    color : red;    
+}
